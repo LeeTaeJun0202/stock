@@ -1,5 +1,8 @@
 import pandas as pd
 
+
+
+
 date = pd.read_excel("납기_2.xlsx", engine="openpyxl")
 price = pd.read_excel("가격_2.xlsx", engine="openpyxl")
 demand = pd.read_excel("수요_2.xlsx", engine="openpyxl")
@@ -192,4 +195,5 @@ for i,j in zip(holding_C.iloc[:,1],holding_C.index):
     holding_C.loc[j,'목적함수(C)']=i+total_C
 
 target=holding_C.iloc[:,2:5]
-print(target)
+
+# print(target)
